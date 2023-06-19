@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+.links{
+
+
+    text-decoration: none;
+    color: #22D4FD;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+    background-image: linear-gradient(
+        to right,
+        #771010,
+         #550d55 50%,
+        #22d4fd 50%
+            
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+
+
+}
+
+.links::before{ 
+
+    content: '';
+background: linear-gradient(
+    to right,
+    #771010,
+    #550d55 50%
+);
+display: block;
+position: absolute;
+bottom: -3px;
+left: 0;
+width: 0;
+height: 3px;
+transition: all 0.3s ease-in-out;
+}
+
+.links:hover{
+
+    background-position: 0;
+    
+
+
+}
+
+.links:hover::before{
+
+    width: 100%;
+}
+
+
+.navegacao{
+
+    display: flex;
+    padding: 1% 0 0 8%;
+    gap: 80px;
+
+}
+
+body{
+
+
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.apresentacao{
+
+    display: flex;
+    
+    align-items: center;
+    
+    padding: 6% 8% 5%;
+    
+                        }
+
+
+
+.apresentacao__conteudo{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+                        }
+
+.apresentacao__conteudo__titulo{
+
+    color: white;
+    font-family: 'Krona One', sans-serif;
+    font-size: 36px;
+
+                        }
+
+.paragrafo{ 
+    
+        color: white;
+        max-width: 70%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px; }
+        
+
+img{ width: 550px; height: 500px; ;}
+
+.rodape{
+
+    color: #000;
+    background-color: #22D4FD;
+    text-align: center;
+    padding: 24px;
+    
+    font-size: 23px;
+        font-family:  'Montserrat', sans-serif; font-style: normal;
+        font-weight: 600;
+
+}
